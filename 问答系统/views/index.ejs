@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>index</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/socket.io/1.7.3/socket.io.min.js"></script>
+    <style media="screen">
+      .jumbotron{
+        background: #101010;
+        color: orange;
+      }
+      a{
+        color:orange;
+      }
+      a:hover{
+        color: orange;
+      }
+      .QandA{
+        width: 100%;
+        border-bottom: 1px solid
+      }
+      span{
+        color:red;
+      }
+    </style>
+</head>
+<body>
+   <% include head %>
+   <div class="jumbotron">
+       <div class="container">
+          <h1>Hello,world!</h1>
+          <p>孔子曰:中午不睡，下午崩溃！<br>孟子曰:孔子说的对！</p>
+       </div>
+   </div>
+
+      <nav class="container">
+   <div class="QandA">
+     <ul class="nav nav-tabs QandA-ul ">
+       <li><a href="#"><strong>最新问答</strong></a></li>
+       <li><a href="#"><strong>热门问答</strong></a></li>
+       <li><a href="#"><strong>等待问答</strong></a></li>
+     </ul>
+     <ul class="nav nav-tabs-zen navbar-right QandA-ul ">
+       <br>
+     </ul>
+     <!-- <ul class="nav nav-tabs-zen navbar-right QandA-ul ">
+     <li><a href="#" style="color:red"><strong> > >更多问答</strong></a></li>
+   </ul> -->
+   </div>
+ </nav>
+
+   <div class="container">
+     <div class="row">
+  <div class="col-sm-6 col-md-3 ">
+    <div class="thumbnail alert-info">
+      <div class="caption">
+        <h3><a href="#">This is problem</a></h3>
+        <p><span><a href="#">This is name</a></span><span>&nbsp;</span><span><a href="#">This is Time</a></span></p>
+        <p>赞<span>0</span> 踩<span>0</span></p>
+        <p>浏览数<span>0</span> 状态:<o>未解决</o></p>
+        <p><a href="#" class="btn btn-primary" role="button">收藏</a> <a href="#" class="btn btn-success" role="button">关注</a></p>
+      </div>
+    </div>
+  </div>  <div class="col-sm-6 col-md-3 ">
+    <div class="thumbnail alert-info">
+      <div class="caption">
+        <h3><a href="#">This is problem</a></h3>
+        <p><span><a href="#">This is name</a></span><span>&nbsp;</span><span><a href="#">This is Time</a></span></p>
+        <p>赞<span>0</span> 踩<span>0</span></p>
+        <p>浏览数<span>0</span> 状态:<span>已解决</span></p>
+        <p><a href="#" class="btn btn-primary" role="button">收藏</a> <a href="#" class="btn btn-success" role="button">关注</a></p>
+      </div>
+    </div>
+  </div>  <div class="col-sm-6 col-md-3 ">
+    <div class="thumbnail alert-info">
+      <div class="caption">
+        <h3><a href="#">This is problem</a></h3>
+        <p><span><a href="#">This is name</a></span><span>&nbsp;</span><span><a href="#">This is Time</a></span></p>
+        <p>赞<span>0</span> 踩<span>0</span></p>
+        <p>浏览数<span>0</span> 状态:<span>已解决</span></p>
+        <p><a href="#" class="btn btn-primary" role="button">收藏</a> <a href="#" class="btn btn-success" role="button">关注</a></p>
+      </div>
+    </div>
+  </div>  <div class="col-sm-6 col-md-3 ">
+    <div class="thumbnail alert-info">
+      <div class="caption">
+        <h3><a href="#">This is problem</a></h3>
+        <p><span><a href="#">This is name</a></span><span>&nbsp;</span><span><a href="#">This is Time</a></span></p>
+        <p>赞<span>0</span> 踩<span>0</span></p>
+        <p>浏览数<span>0</span> 状态:<span>已解决</span></p>
+        <p><a href="#" class="btn btn-primary" role="button">收藏</a> <a href="#" class="btn btn-success" role="button">关注</a></p>
+      </div>
+    </div>
+  </div>  <div class="col-sm-6 col-md-3 ">
+    <div class="thumbnail alert-info">
+      <div class="caption">
+        <h3><a href="#">This is problem</a></h3>
+        <p><span><a href="#">This is name</a></span><span>&nbsp;</span><span><a href="#">This is Time</a></span></p>
+        <p>赞<span>0</span> 踩<span>0</span></p>
+        <p>浏览数<span>0</span> 状态:<span>已解决</span></p>
+        <p><a href="#" class="btn btn-primary" role="button">收藏</a> <a href="#" class="btn btn-success" role="button">关注</a></p>
+      </div>
+    </div>
+  </div>  <div class="col-sm-6 col-md-3 ">
+    <div class="thumbnail alert-info">
+      <div class="caption">
+        <h3><a href="#">This is problem</a></h3>
+        <p><span><a href="#">This is name</a></span><span>&nbsp;</span><span><a href="#">This is Time</a></span></p>
+        <p>赞<span>0</span> 踩<span>0</span></p>
+        <p>浏览数<span>0</span> 状态:<span>已解决</span></p>
+        <p><a href="#" class="btn btn-primary" role="button">收藏</a> <a href="#" class="btn btn-success" role="button">关注</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+     <ul class="nav nav-tabs-zen navbar-right QandA-ul ">
+       <br>
+     </ul>
+   </div>
+   <!-- /**分页**/ -->
+   <nav class="container" aria-label="Page navigation">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">7</a></li>
+    <li><a href="#">8</a></li>
+    <li><a href="#">9</a></li>
+    <li><a href="#">10</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+   <% include footer %>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>personal</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/socket.io/1.7.3/socket.io.min.js"></script>
+    <style media="screen">
+        .personal {
+            position: relative;
+            left: -50px;
+        }
+
+        .default {
+            width: 300px;
+            height: 100%;
+            /*border: 1px solid orange;*/
+            position: relative;
+            left: 0px;
+            float: left;
+        }
+
+        .myPhoto {
+            width: 200px;
+            height: 200px;
+            border: 1px solid orange;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .mypersonal {
+            position: relative;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <% include head %>
+        <nav class="container">
+
+            <h1 class="personal"><strong>个人信息</strong></h1>
+            <br>
+            <br>
+            <div class="default">
+                <div class="myPhoto">
+                    <img src="" alt="头像" />
+                </div>
+                <div class="hidden-sm hidden-xs">
+                    <hr />
+                    <p>
+                        <h4>注册时间:</h4></p>
+                    <p><span>2017-08-08</span>&nbsp;&nbsp;<span>11:58:08</span></p>
+                    <hr />
+                    <p>
+                        <h4>最后登录时间:</h4></p>
+                    <p><span>2017-08-08</span>&nbsp;&nbsp;<span>11:58:08</span></p>
+                    <hr />
+                    <p>
+                        <h4>会员到期时间:</h4></p>
+                    <p><span>2017-08-08</span>&nbsp;&nbsp;<span>11:58:08</span></p>
+                    <hr />
+                    <p>
+                        <h4>可用天数:</h4></p>
+                    <p><span>0</span>天</p>
+                    <hr />
+                    <p>
+                        <h4>冲值记录:</h4></p>
+                    <p><span>2017-08-08</span>&nbsp;&nbsp;<span>10</span>元</p>
+                </div>
+            </div>
+            <div class="mypersonal col-sm-8">
+                <h3>账户信息</h3>
+                <hr />
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">用户名:</label>
+                    <div class="col-sm-10">
+                        <input type="name" class="form-control" id="inputEmail3" placeholder="用户名">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">密码:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="密码">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">自设问题:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="" value="我的生日是？">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">自设答案:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="" value="20170808">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">真实姓名:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="" value="想要当主席">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">性别:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="" value="男">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">QQ号码:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="" value="1010080822">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">出生年月:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="" value="20170808">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">电子邮箱:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputPassword3" placeholder="" value="1010080822@qq.com">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">联系电话:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="" value="15149876709">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">邮政编码:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="" value="021600">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">详细地址:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="" value="北京海淀区东二胡同6741">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">自我介绍:</label>
+                    <div class="col-sm-10">
+                        <textarea name="name" rows="8" cols="70" value="">争抢好胜，江湖义气</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">更改</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <% include footer %>
+</body>
+
+</html>

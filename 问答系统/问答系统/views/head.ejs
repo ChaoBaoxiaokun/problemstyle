@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/socket.io/1.7.3/socket.io.min.js"></script>
+    <script src="https://cdn.bootcss.com/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+    <style media="screen">
+      .s{
+        background: url("/images/headbg.jpg") ;
+      }
+      a{
+        font-weight: bold;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default s">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <img src="/images/1.jpg" alt="" / width="50px" height="50px">
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">分類標籤 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">C</a></li>
+                            <li><a href="#">C++</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li><a href="#">Node.js</a></li>
+                            <li><a href="#">MongoDB</a></li>
+                            <li><a href="#">HTML5</a></li>
+                            <li><a href="#">python</a></li>
+                            <li><a href="#">Angular JS</a></li>
+                            <li><a href="#">arm</a></li>
+                            <li><a href="#">BootStrap</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">Django</a></li>
+                            <li><a href="#">jQuery</a></li>
+                            <li><a href="#">Linux</a></li>
+                            <li><a href="#">Mantra</a></li>
+                            <li><a href="#">Meteor</a></li>
+                            <li><a href="#">Regex</a></li>
+                            <li><a href="#">Reate_Native</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">登錄</a></li>
+                    <li><a href="#">注冊</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </body>
+</html>

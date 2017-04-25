@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>问答系统</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/socket.io/1.7.3/socket.io.min.js"></script>
+    <script src="https://cdn.bootcss.com/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style media="screen">
+    .w {
+      height: 100px;
+      background-color: #f6f6f6;
+      line-height: 40px;
+    }
+    button{
+      /*margin-top: 20px;*/
+      height: 30px;
+    }
+    .x{
+      width: 190px;
+      height: 380px;
+      border: 2px solid green;
+    }
+    </style>
+</head>
+
+<body>
+  <div class="w container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-11 col-sm-11 col-xs-11">
+          <h3>题目</h3>
+          <p><span><button type="button" class="btn btn-danger">标签</button></span><span>提问多长时间</span></p>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-1">
+          <p><button type="button" class="btn btn-info">收藏&nbsp;<span>0</span></button></p>
+          <p><button type="button" class="btn btn-success">关注&nbsp;<span>0</span></button></p>
+        </div>
+       </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+        <form class="" action="index.html" method="post">
+        <div class="col-md-10 col-sm-10 col-xs-10">
+          <h3>内容</h3>
+          <p>This is a problem substance</p>
+          <img src="" alt="这里可以有图片">
+          <p><span>2个小时提前</span>&nbsp;&nbsp;<span>评论</span>&nbsp;&nbsp;<span>编译</span>&nbsp;&nbsp;<span><a href="#">更多</a></span></p>
+          <hr>
+          <h3>编写答案</h3>
+          <textarea name="answer" rows="8" cols="110"></textarea>
+          <input type="submit" name="ans" value="提交答案" class="btn btn-primary">
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 x">
+
+        </div>
+      </div>
+    </div>
+</body>
+</html>
